@@ -1,0 +1,91 @@
+.pascal {
+    padding: 1rem;
+    font-size: 1rem;
+
+    &-top {
+        max-width: 600px;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    &-header {
+        text-align: center;
+        background-color: #4ce0d2;
+        border-radius: 25px;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+
+        & > * {
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+
+    &-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    &-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &-description {
+        max-width: 30vw;
+    }
+
+    &-inputs {
+        display: flex;
+        flex-flow: column nowrap;
+
+        label {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+
+            &:last-of-type {
+                margin-bottom: 1rem;
+            }
+
+            input {
+                padding: 0.5rem 0;
+                text-align: center;
+            }
+
+            span {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &-btn {
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &-result {
+        text-align: center;
+        font-size: var(--cellFontSize);
+        .cell {
+            width: var(--cellSize);
+            height: var(--cellSize);
+            padding: var(--cellPadding);
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            // border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 0px 1px black;
+            &.odd {
+                background-color: #22aaa1;
+            }
+        }
+    }
+}

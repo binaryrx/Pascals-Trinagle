@@ -5,13 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content="meta example" />
-        <title>example</title>
+        <title>Pascals's Triangle</title>
         <!-- <link rel="icon" type="image/jpg" href="images/favicon.png" /> -->
     </head>
 
     <body>
         <main>
-            <h1>Hi</h1>
+            <div id="Pascal" class="pascal">
+                <div class="pascal-top">
+                    <h2 class="pascal-title">Pascal's Triangle</h2>
+                    <header class="pascal-header">
+                        <h3 class="pascal-subtitle">What is Pascal's Triangle?</h3>
+                        <p class="pascal-description">
+                            A Pascal's Triangle is a mathematical number array used to find various other number sets
+                            such as Fibonacci sequences, tetahedron numbers, and powers of two.
+                        </p>
+                    </header>
+
+                    <div class="pascal-inputs">
+                        <label for="row">
+                            <span>Starting Value</span>
+                            <input
+                                id="Pascal-start"
+                                name="row"
+                                type="number"
+                                value="1"
+                                placeholder="Starting Number"
+                                maxlength="2"
+                            />
+                        </label>
+                        <label for="start">
+                            <span>Number of Rows</span>
+                            <input
+                                id="Pascal-rows"
+                                type="number"
+                                value="3"
+                                placeholder="Number of Rows"
+                                maxlength="2"
+                            />
+                        </label>
+                        <button class="pascal-btn" id="Pascal-create" class="">Create New Triangle</button>
+                    </div>
+                </div>
+
+                <div class="pascal-result" id="Pascal-result"></div>
+            </div>
         </main>
     </body>
 </html>

@@ -1,6 +1,4 @@
 import "./scss/main.scss";
-import example from "./js/example";
+import "./js/pascal";
 
 console.log("hello from js");
-
-example();
